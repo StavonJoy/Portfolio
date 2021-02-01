@@ -317,4 +317,7 @@ html {
   .projpic {
     max-width: 300px;
   }
+  .contact {
+    height: auto;
+  }
  }
