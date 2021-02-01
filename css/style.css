@@ -17,9 +17,11 @@ footer {
 }
 
 h3 {
-  display: inline;
+  /* display: inline; */
   text-align: center;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 h4 {
@@ -80,9 +82,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
 } */
-.cont {
-  flex-grow: 2;
-}
+
 
 .cred {
   text-decoration: underline;
@@ -139,6 +139,13 @@ html {
   display: grid;
   grid-template-columns: 50%, 50%;
   grid-column-gap: 50px;
+}
+
+.projpic {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-width: 400px;
 }
 
 .sec1 {
@@ -246,10 +253,6 @@ html {
     background-position: cover;
     height: 100vh;
   } 
-  .projpic {
-    width: 45vw;
-    height: 45vh;
-  }
 }
 @media only screen and (max-width: 1200px) {
   #hi {
@@ -267,10 +270,6 @@ html {
     background-position: cover;
     height: 100vh;
   } 
-  .projpic {
-    width: 35vw;
-    height: 35vh;
-  }
 }
 @media only screen and (max-width: 800px) {
   h3 {
@@ -280,7 +279,6 @@ html {
     top: auto;
   }
   .cont {
-    /* display: inline; */
     font-size: .95em;
   }
   #icon {
@@ -292,8 +290,8 @@ html {
     text-align: center;
   }  
   .sec1 {
-      margin-top: 40px;
-      height: 50vh; 
+    margin-top: 40px;
+    height: 50vh; 
   }
   .section {
     margin: 0 auto; 
@@ -301,13 +299,9 @@ html {
     padding: 10px;
     border: none;
   }
-  .projpic {
-    width: 55vw;
-    height: 35vh;
-    /* size: 40; */
-  }
-  .p-item1, .p-item2 {
-    font-size: .9em;
+  .p-item2 {
+    padding: 25px;
+    font-size: 1em;
     display: block;
     grid-column-start: 1;
     grid-column-end: 3;
