@@ -127,6 +127,7 @@ html {
   font-size: .7em;
   grid-column-start: 2;
   grid-column-end: 3;
+  min-width: 200px;
 }
 
 .plink {
@@ -146,6 +147,7 @@ html {
   height: auto;
   border-radius: 12px;
   max-width: 400px;
+  max-height: 500px;
 }
 
 .sec1 {
@@ -258,6 +260,9 @@ html {
   #hi {
     top: auto;
   } 
+  .projpic {
+    width: auto;
+  }
   .sec2 {
     height: auto;
   }
@@ -271,7 +276,7 @@ html {
     height: 100vh;
   } 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   h3 {
     display: block;
   }  
