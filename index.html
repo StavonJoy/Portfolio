@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+  <title>Stavon Ewart</title>
+</head>
+<body>
+  <header>
+    <nav class="shadow-lg navbar sticky-top navbar-expand-lg navbar-dark">
+      <a class="link navbar-brand nav-link active sta" href="#stavon">Stavon Ewart</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="links collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto" id="navdiv">
+          <a class="link nav-link" href="#projects">Projects</a>
+          <a class="link nav-link" href="#about">About</a>
+          <a class="link nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div class="section sec1 shadow-sm" id="stavon">
+        <div class="blur">
+          <p class="animate_animated animate_backInDown" id="hi">Hi, I'm Stavon!</p>
+        </div>
+      </div>
+      <div class="section sec2 shadow-sm" id="about">
+        <h4>Who am I?</h4>
+        <div class="animate_animated animate_backInDown text">
+          <p>I'm a full-stack software engineer, using my creativity and expertise in customer service to create beautiful, user-friendly websites and applications.</p>
+          <p>My background includes over 15 years of customer service experience, and over 8 years of management experience.</p>
+          <p>I believe in the power of positivity, the importance of change and personal growth, and that hard work can help you achieve anything.</p>
+        </div>
+      </div>
+      <div class="section sec3 shadow-sm" id="projects">
+        <h4>What have I done?</h4>
+        <div class="text">
+          <div class="project">
+            <h3>Snake Game</h3>
+            <a href="https://snake-sta.surge.sh/" class="p-item1" target="_blank"><img src="./images/snake.png" height="400px" width="450px" class="p-item1"></a>
+            <p class="p-item2">A simple snake game, built off of <a href="https://www.youtube.com/watch?v=21eSpMtJwrc" target="_blank">this tutorial</a>. This uses Vanilla Javascript, HTML Canvas, Google Fonts, and Bootstrap Icons. I added a high score function, a directional button display for mobile devices, and some styling. New updates feature better styling and wall collisions will result in a game over. Next updates will be sound effects and the ability to pause/begin gameplay with a button.</a></p>
+            <p class="plink"><a href="https://snake-sta.surge.sh/" target="_blank" class="link btn btn-info btn-lg">Play here!</a></p>
+          </div>
+          <hr />
+          <div class="project">
+            <h3>Headache Journal</h3>
+            <img class="p-item1" src="./images/List.png" height="400px" width="450px" class="projpic">
+            <p class="p-item2">This is a project I worked on for myself. I have chronic headaches and migraines, and my doctors have suggested keeping a journal of these events. This full-stack app was made with React, JWT Auth, MongoDB Atlas, Bootstrap, and more. The next features I'm adding are a checklist feature for potential triggers, and implementing an API to pull in the weather information.</p>
+            <!-- <p class="plink"><a href="https://imadethiss.herokuapp.com/" target="_blank" class="link btn btn-info btn-lg">See it here!</a></p> -->
+          </div>
+          <hr />
+          <div class="project">
+            <h3>MyBubble</h3>
+            <a href="https://mybubble.surge.sh/" class="p-item1" target="_blank"><img src="./images/mybubble.png" height="400px" width="450px" class="p-item1"></a>
+            <p class="p-item2">MyBubble is an app that uses augmented reality to show you where your personal bubble is, to promote proper social distancing. This was a team project for the TechTogether Boston's hackathon, in part with Women Who Code Boston. MyBubble took home the award for Best Community Enrichment Hack! It uses echoAR's cloud platform, and was designed by myself, <a href="https://www.linkedin.com/in/zaina-shawar/" target="_blank" class="cred">Zaina Shawar</a>, <a href="https://www.linkedin.com/in/Vaibhavi-Khamar/" target="_blank" class="cred">Vaibhavi Khamar</a>, and <a href="https://www.linkedin.com/in/thaopham1816/" target="_blank" class="cred">Thao Pham.</a></p>
+            <p class="plink"><a href="https://mybubble.surge.sh/" target="_blank" class="link btn btn-info btn-lg">See it here!</a></p>
+          </div>
+          <hr />
+          <div class="project">
+            <h3>Beets</h3>
+            <a href="https://beets-base.herokuapp.com/" class="p-item1" target="_blank"><img src="./images/beets.png" height="400px" width="450px" class="p-item1"></a>
+            <p class="p-item2">Beets is a social media web app designed with Spotify Web API to allow users to create profiles, playlists based on vibe, and add to those playlists with the songs they're listening to in real time! This was a group project for Unit 3 of General Assembly SEI, made with <a href="https://www.linkedin.com/in/cory-spicer/" target="_blank" class="cred">Cory Spicer</a> and <a href="https://www.linkedin.com/in/kailah-konkel/" target="_blank" class="cred">Kailah Konkel</a>. Uses JSON Web Tokens, Bootstrap, Express, MongoDB Atlas, Spotify Web API, React, and more.</p>
+            <p class="plink"><a href="https://beets-base.herokuapp.com/" target="_blank" class="link btn btn-info btn-lg">Check it out here!</a></p>
+          </div>
+          <hr />
+          <!-- <div class="project">
+            <h3>iMadeThis</h3>
+            <a href="https://imadethiss.herokuapp.com/" class="p-item1" target="_blank"><img src="./images/imadethis.png" height="400px" width="450px" class="projpic"></a>
+            <p class="p-item2">iMadeThis is a Full-stack Django App deployed using Heroku. This app is a place to share your crafts and DIY projects for others to see, complete with photos! This was a solo Unit 4 project for General Assembly SEI. Created using Materialize, Python, Django, PostgreSQL, AWS Images, and more!</p>
+            <p class="plink"><a href="https://imadethiss.herokuapp.com/" target="_blank" class="link btn btn-info btn-lg">See it here!</a></p>
+          </div>
+          <hr /> -->
+          <div class="project">
+            <h3>Wedding Website</h3>
+            <a href="https://ewart-wedding.herokuapp.com/" class="p-item1" ><img src="./images/wedding.png" height="400px" width="450px" class="p-item1"></a>
+            <p class="p-item2">A custom-designed wedding website, made for my Unit 2 General Assembly SEI project. A place for guests and friends to see information about our wedding, write a note on the digital guestbook, and view information on our registry items. Uses Google OAuth 2.0, HTML, CSS, JS, Express, MongoDB, Mongoose, and EJS.</p>
+            <p class="plink"><a href="https://ewart-wedding.herokuapp.com/" target="_blank" class="link btn btn-info btn-lg">View the website here!</a></p>
+          </div>
+          <hr />
+          <div class="project">
+            <h3>Suncatcher</h3>
+            <a href="https://suncatcher.surge.sh/" target="_blank" class="p-item1"><img src="./images/suncatcher.png" height="400px" width="450px" class="p-item1"></a>
+            <p class="p-item2">Sunset and sunrise time calculated by user IP address. Uses two API calls, the first to grab a user's location based on their IP address, and then the second returns the times in UTC.  Utilizing HTML, CSS, Javascript, and APIs. This was my first project for General Assembly's SEI program.</p>
+            <p class="plink"><a href="https://suncatcher.surge.sh/" target="_blank" class="link btn btn-info btn-lg">Give it a whirl</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="section sec4 shadow-sm" id="contact">
+        <h4>Contact Me!</h4>
+        <!-- <div class="text cont"> -->
+        <div class="text test">
+          <p class="contact"><a href="https://drive.google.com/file/d/154ZWtoQ4dJeyQwO__RQFKu_SUWNvJ0_1/view" target="_blank"><img id="icon" width="100" height="100" src="images/documenticon.png">Resume</a></p>
+          <!-- <p class="contact"><a href="./Stavon-Ewart-Resume.pdf" download="Stavon-Ewart-Resume" target="_blank"><img id="icon" width="100" height="100" src="images/documenticon.png">Download Resume</a></p> -->
+          <p class="contact"><a href="mailto:stavonewart@gmail.com" target="_blank"><img id="icon" width="100" height="100" src="images/mailicon.png">Email</a></p>
+          <p class="contact"><a href="https://github.com/StavonJoy" target="_blank"><img id="icon" width="100" height="100" src="images/github.png">Github</a></p>
+          <p class="contact"><a href="https://www.linkedin.com/in/stavon-ewart/" target="_blank"><img id="icon" width="100" height="100" src="images/linkedin.jpg">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="navbar-dark">
+    <a>Designed by Stavon Ewart</a>
+  </footer>
+</body>
+</html>
