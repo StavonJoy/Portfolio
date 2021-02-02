@@ -113,6 +113,10 @@ html {
   color: white;
 }
 
+#navdiv {
+  text-align: right;
+}
+
 .p-item1 {
   border-radius: 12px;
   grid-column-start: 1;
