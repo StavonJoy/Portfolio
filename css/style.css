@@ -1,10 +1,14 @@
 body {
   font-size: .8em;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
   background: rgb(0,128,128);
   background: linear-gradient(0deg, rgba(0,128,128,1) 0%, rgba(0,95,95,1) 38%, rgba(0,52,52,1) 100%);
 }
 
+button {
+  margin-right: 15px;
+}
 footer {
   left: 0;
   bottom: 0;
@@ -19,7 +23,7 @@ footer {
 h3 {
   /* display: inline; */
   text-align: center;
-  /* font-size: 1.3em; */
+  font-size: 1.3em;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -33,6 +37,7 @@ h4 {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 20px;
 }
 
 #hi {
@@ -42,6 +47,9 @@ html {
   display: inline-block;
   animation: backInLeft;
   animation-duration: 2s;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Dancing Script', cursive;
+  font-weight: 800;
 }
 
 #icon {
@@ -64,7 +72,20 @@ html {
   background: rgb(0,149,149);
   margin-top: 20px;
 }
+.carousel-item {
+  text-align: center;
+}
 
+.carousel-cont {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+}
+.carousel-text {
+  text-align: center;
+  font-size: 1.1em;
+}
 .contact, .contact>a {
   margin: 10px;
   margin-top: 20px;
@@ -72,6 +93,11 @@ html {
   font-size: 1em;
   color: white;
   text-align: center;
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .con-link {
   margin-top: 10px;
@@ -104,17 +130,20 @@ html {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+
 .navbar {
+  background: rgb(0,149,149);
+  background: linear-gradient(196deg, rgba(0,149,149,1) 23%, rgba(0,52,52,1) 100%);
   font-size: 1.5rem;
   position: fixed;
   width: 100%;
-  background: rgb(0,149,149);
-  background: linear-gradient(196deg, rgba(0,149,149,1) 23%, rgba(0,52,52,1) 100%);
+  /* text-align: right; */
   color: white;
 }
 
 #navdiv {
-  text-align: right;
+  /* margin-right: 15px;
+  right: 0; */
 }
 
 .p-item1 {
@@ -131,7 +160,7 @@ html {
   font-size: .7em;
   grid-column-start: 2;
   grid-column-end: 3;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 .plink {
@@ -183,19 +212,14 @@ html {
 }
 
 .sta {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .text {
-  padding: 30px;
+  padding: 70px;
   font-size: 1em;
 }
 
-.test {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 
 @keyframes glow {
   from {
@@ -222,11 +246,18 @@ html {
     padding-right: 300px;
     height: auto;
   }
+  .p-item2 {
+    padding: 50px;
+  }
 }
 @media only screen and (min-width: 1300px) {
   body {
     font-size: 1em;
   }
+  .carousel-item {
+    font-size: .79em;
+  }
+
   #hi {
     top: auto;
   } 
@@ -242,6 +273,9 @@ html {
     background-position: cover;
     height: 100vh;
   } 
+  .text {
+    font-size: .75em;
+  }
 }
 @media only screen and (max-width: 1300px) {
   #hi {
@@ -261,6 +295,13 @@ html {
   } 
 }
 @media only screen and (max-width: 1200px) {
+  
+  .carousel {
+    font-size: .8em;
+  }
+  /* .carousel-text {
+    font-size: .75em;
+  } */
   #hi {
     top: auto;
   } 
@@ -290,6 +331,9 @@ html {
   .cont {
     font-size: .95em;
   }
+  .carousel-item {
+    font-size: 1.2em;
+  }
   #icon {
     height: 70px;
     width: 70px;
@@ -315,6 +359,9 @@ html {
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
+  }
+  .text {
+    font-size: 1.1em;
   }
  }
  @media only screen and (max-width: 600px) {
