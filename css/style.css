@@ -40,6 +40,9 @@ html {
   scroll-padding: 20px;
 }
 
+li {
+  font-size: .70em;
+}
 #hi {
   position: absolute;
   bottom: 0;
@@ -117,6 +120,11 @@ html {
 
 .cred:hover {
   color: white;
+}
+
+.experience {
+  /* text-align: center; */
+  padding: 50px;
 }
 
 .link {
@@ -293,6 +301,9 @@ html {
     background-position: cover;
     height: 100vh;
   } 
+  .text {
+    font-size: .75em;
+  }
 }
 @media only screen and (max-width: 1200px) {
   
