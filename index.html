@@ -20,8 +20,8 @@
 </head>
 <body>
   <header>
-    <nav class="shadow-lg navbar sticky-top navbar-expand-lg navbar-dark">
-      <a class="link navbar-brand nav-link active sta" href="#stavon">Stavon Ewart</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <a class="link navbar-brand nav-link active sta-nav" href="#stavon">Stavon Ewart</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,37 +36,34 @@
   </header>
   <main>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-      <div class="section sec1 shadow-sm" id="stavon">
-        <div class="blur">
-          <p class="animate_animated animate_backInDown" id="hi">Hi, I'm Stavon!</p>
-        </div>
+      <div class="section sec1 shadow-sm">
+          <img src="images/me-shorthair.jpg" id="stavon">
+          <p id="sec1-hi">Hi, I'm Stavon!</p>
       </div>
       <div class="section sec2 shadow-sm" id="about">
         <h4>Who am I?</h4>
-        <div class="animate_animated animate_backInDown text">
-          <p>I'm a full-stack software engineer, using my creativity and expertise in customer service to create beautiful, user-friendly websites and applications.</p>
-          <p>My background includes over 15 years of customer service experience, and over 8 years of management experience.</p>
-          <p>I believe in the power of positivity, the importance of change and personal growth, and that hard work can help you achieve anything.</p>
+        <div class="animate_animated animate_backInDown about">
+          <p>I'm a mom, a wife, a full-stack software engineer, a customer service pro, a crafter, a gamer, and an all around nerd! I love using my creativity and expertise in customer service to create beautiful, user-friendly websites and applications. My background includes over 15 years of customer service, and over 8 years of management experience.I believe in the power of positivity, the importance of change and personal growth, and that hard work can help you achieve anything!</p>
         </div>
         <hr />
+        <h3>Experience</h3>
         <div class="experience">
-          <h3>Experience</h3>
-          <div class="">
-            <h5>PodSquad Inc. - Engineer Intern</h5>
-            <h6>January 2021 - Present</h6>
+          <div class="experience-box">
+            <h5 class="experience-header">PodSquad Inc. - Engineer Intern</h5>
+            <h6 class="experience-header">January 2021 - Present</h6>
             <ul>
-              <li>React Native</li>
-              <li>Redux</li>
-              <li>Shoutem</li>
+              <li>Volunteer internship for a small startup that creates custom mobile apps for podcasts.</li>
+              <li>Create custom UI using React Native, HTML, and CSS</li>
+              <li>Worked with the lead engineer to develop extensions that provide multiple RSS feeds and display a featured podcast.</li>
+              <li>Experience with Redux, and Shoutem, an open source platform that provides a builder for customers to design the layout of their app using custom extensions.</li>
             </ul>
           </div>
-          <div class="">
-            <h5>General Assembly - Software Engineering Immersive</h5>
-            <h6>July 2020 - October 2020</h6>
+          <div class="experience-box">
+            <h5 class="experience-header">General Assembly - Software Engineering Immersive</h5>
+            <h6 class="experience-header">July 2020 - October 2020</h6>
             <ul>
-              <li>Over 420 hours of instruction</li>
-              <li>Completed 4 projects and a hackathon</li>
-              <li>HTML/CSS, Javascript, Express, React, Python, MongoDB, PostgreSQL, and more.</li>
+              <li>Over 420 hours of instruction in numerous languages and frameworks, completed 4 projects and a hackathon, and studied Computer Science basics.</li>
+              <li>Experience with Github, HTML/CSS, Javascript, Node.js, Express, React, Python, Django, MongoDB/MongoDB Atlas, Mongoose, PostgreSQL, and more.</li>
             </ul>
           </div>
         </div>
@@ -109,7 +106,7 @@
       </div>
       <div class="section sec3 shadow-sm" id="projects">
         <h4>What have I done?</h4>
-        <div class="text">
+        <div class="">
           <hr />
           <h3>Snake Game</h3>
           <div class="project">

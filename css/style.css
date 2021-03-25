@@ -1,9 +1,10 @@
+/*   background-color: rgb(82,16,30);
+    #52101e */ 
+
 body {
   font-size: .8em;
   /* font-family: 'Quicksand', sans-serif; */
   font-family: 'Noto Sans JP', sans-serif;
-  background: rgb(0,128,128);
-  background: linear-gradient(0deg, rgba(0,128,128,1) 0%, rgba(0,95,95,1) 38%, rgba(0,52,52,1) 100%);
 }
 
 button {
@@ -16,12 +17,14 @@ footer {
   color: white;
   text-align: center;
   font-size: 1.1em;
-  background: rgb(0,149,149);
-  background: linear-gradient(196deg, rgba(0,149,149,1) 23%, rgba(0,52,52,1) 100%);
+  background: rgb(111,25,43);
+  background: linear-gradient(180deg, rgba(111,25,43,1) 0%, rgba(94,27,41,1) 75%, rgb(65, 32, 32) 100%);
+  /* background: rgb(0,149,149);
+  background: linear-gradient(196deg, rgba(0,149,149,1) 23%, rgba(0,52,52,1) 100%); */
 }
 
 h3 {
-  /* display: inline; */
+  display: block;
   text-align: center;
   font-size: 1.3em;
   font-weight: 700;
@@ -35,6 +38,9 @@ h4 {
   font-weight: 700;
 }
 
+header {
+  box-shadow: 0px 1px 10px #444;
+}
 html {
   scroll-behavior: smooth;
   scroll-padding: 20px;
@@ -43,22 +49,17 @@ html {
 li {
   font-size: .70em;
 }
-#hi {
-  position: absolute;
-  bottom: 0;
-  font-size: 3em;
-  display: inline-block;
-  animation: backInLeft;
-  animation-duration: 2s;
-  /* font-family: 'Quicksand', sans-serif; */
-  font-family: 'Dancing Script', cursive;
-  font-weight: 800;
-}
 
 #icon {
   margin-right: 10px;
 }
+.about {
+  font-size: .80em;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 55vw;
 
+}
 .active {
   color: white;
 }
@@ -72,8 +73,11 @@ li {
 }
 
 .btn {
-  background: rgb(0,149,149);
+  background: rgb(111,25,43);
   margin-top: 20px;
+}
+.btn:hover {
+  background: rgb(133, 47, 65);
 }
 .carousel-item {
   text-align: center;
@@ -89,10 +93,15 @@ li {
   text-align: center;
   font-size: 1.1em;
 }
+.contact {
+  box-shadow: 0px 0px 10px #444;
+  border-radius: 12px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.18);
+  color: black;
+}
 .contact, .contact>a {
-  margin: 10px;
-  margin-top: 20px;
-  height: 20vh;
+  /* height: 20vh; */
   font-size: 1em;
   color: white;
   text-align: center;
@@ -124,7 +133,24 @@ li {
 
 .experience {
   /* text-align: center; */
-  padding: 50px;
+  /* padding: 20px;  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.experience-box {
+  box-shadow: 0px 0px 10px #444;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 25px;
+  color: white;
+  max-width: 700px; 
+  /* background-color: rgba(255, 255, 255, 0.982); */
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 1em;
+}
+.experience-header {
+  text-align: center;
 }
 
 .link {
@@ -132,27 +158,21 @@ li {
 }
 
 .link:hover {
-  color: #fff;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  color: rgb(138, 138, 138);
 }
 
 
 .navbar {
-  background: rgb(0,149,149);
-  background: linear-gradient(196deg, rgba(0,149,149,1) 23%, rgba(0,52,52,1) 100%);
+  background: rgb(111,25,43);
+  background: linear-gradient(0deg, rgba(111,25,43,1) 0%, rgba(94,27,41,1) 75%, rgb(65, 32, 32) 100%);
+  box-shadow: 1px 2px 10px #444;
   font-size: 1.5rem;
   position: fixed;
   width: 100%;
-  /* text-align: right; */
+  text-align: right;
   color: white;
 }
 
-#navdiv {
-  /* margin-right: 15px;
-  right: 0; */
-}
 
 .p-item1 {
   border-radius: 12px;
@@ -164,11 +184,13 @@ li {
 }
 
 .p-item2 {
+  margin: 0 auto;
   display: inline;
   font-size: .7em;
   grid-column-start: 2;
   grid-column-end: 3;
   min-width: 300px;
+  max-width: 600px;
 }
 
 .plink {
@@ -192,17 +214,26 @@ li {
 }
 
 .sec1 {
+  text-align: center;
   margin-top: 40px;
-  color: white;
+  background-color: white;
+  color: rgb(53, 53, 53);
   height: 100vh;
-  background-image: url('/images/Sta.jpg');
-  background-size: cover;
 }
+#sec1-hi {
+  bottom: 0;
+  font-size: 3em;
+  animation: backInLeft;
+  animation-duration: 2s;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Dancing Script', cursive;
+  font-weight: 800;
+  }
 
 .sec2 {
   background-color: rgb(53, 53, 53);
   color: white;
-  height: auto;
+  height: 100vh;
 }
 
 .sec3 {
@@ -217,10 +248,20 @@ li {
 .section {
   font-size: 2em;
   padding: 50px;
+  box-shadow: 0px 0px 10px #444;
 }
 
-.sta {
+#stavon {
+  margin-top: 50px;
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px #444;
+}
+
+.sta-nav {
   font-size: 2.5rem;
+  text-shadow: 0px 0px 15px #444;
 }
 
 .text {
@@ -229,22 +270,10 @@ li {
 }
 
 
-@keyframes glow {
-  from {
-  text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,;
-  }
-  to {
-  text-shadow:  0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
-  }
-}
 
 @media only screen and (min-width: 1500px) {
   #hi {
     top: auto;
-  }
-  .sec1 {
-    background-position: cover;
-    height: 100vh;
   }
   .sec2 {
     height: auto;
@@ -259,8 +288,11 @@ li {
   }
 }
 @media only screen and (min-width: 1300px) {
-  body {
+  /* body {
     font-size: 1em;
+  } */
+  .about {
+    padding: 50px;
   }
   .carousel-item {
     font-size: .79em;
@@ -277,10 +309,7 @@ li {
     padding-right: 100px;
     height: auto;
   }
-  .sec1 {
-    background-position: cover;
-    height: 100vh;
-  } 
+
   .text {
     font-size: .75em;
   }
@@ -297,15 +326,12 @@ li {
     padding-right: 100px;
     height: auto;
   }
-  .sec1 {
-    background-position: cover;
-    height: 100vh;
-  } 
+
   .text {
     font-size: .75em;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   
   .carousel {
     font-size: .8em;
@@ -316,6 +342,13 @@ li {
   #hi {
     top: auto;
   } 
+  .experience {
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience-box {
+    flex: 100%;
+  }
   .projpic {
     width: auto;
   }
@@ -327,10 +360,7 @@ li {
     padding-right: 100px;
     height: auto;
   }
-  .sec1 {
-    background-position: cover;
-    height: 100vh;
-  } 
+
 }
 @media only screen and (max-width: 900px) {
   h3 {
@@ -349,19 +379,23 @@ li {
     height: 70px;
     width: 70px;
   }
+
   .project {
     display: block;
     text-align: center;
   }  
   .sec1 {
-    margin-top: 40px;
-    height: 50vh; 
+    margin-top: 30%;
+    height: 100vh; 
   }
   .section {
     margin: 0 auto; 
     font-size: 1.5em;
     padding: 10px;
     border: none;
+  }
+  #stavon {
+    margin-top: 35%;
   }
   .p-item2 {
     padding: 25px;
@@ -381,5 +415,9 @@ li {
   }
   .contact {
     height: auto;
+  }
+  #stavon {
+    margin: 100px;
+    width: 60%;
   }
  }
