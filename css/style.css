@@ -2,9 +2,11 @@
     #52101e */ 
 
 body {
-  font-size: .8em;
+  font-size: .9em;
   /* font-family: 'Quicksand', sans-serif; */
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .25px;
 }
 
 button {
@@ -396,7 +398,8 @@ li {
     border: none;
   }
   #stavon {
-    margin-top: 35%;
+    margin: 100px;
+    /* width: 60%; */
   }
   .p-item2 {
     padding: 25px;
