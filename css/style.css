@@ -190,6 +190,7 @@ li {
   grid-column-end: 3;
   min-width: 300px;
   max-width: 600px;
+  
 }
 
 .plink {
@@ -210,6 +211,7 @@ li {
   border-radius: 12px;
   max-width: 400px;
   max-height: 500px;
+  box-shadow: 0px 0px 10px #444;
 }
 
 .sec1 {
