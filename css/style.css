@@ -86,7 +86,6 @@ li {
   color: black;
 }
 .contact, .contact>a {
-  /* height: 20vh; */
   font-size: 1em;
   color: white;
   text-align: center;
@@ -147,7 +146,6 @@ li {
   font-size: 1.5rem;
   position: fixed;
   width: 100%;
-  text-align: right;
   color: white;
 }
 
@@ -165,8 +163,8 @@ li {
   margin: 0 auto;
   display: inline;
   font-size: .7em;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   min-width: 300px;
   max-width: 600px;
   
@@ -193,7 +191,7 @@ li {
 
 .project {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
@@ -281,7 +279,7 @@ li {
     padding: 50px;
   }
 }
-@media only screen and (min-width: 1300px) {
+/* @media only screen and (min-width: 1300px) {
   .about {
     padding: 50px;
   }
@@ -299,12 +297,12 @@ li {
     padding-left: 100px;
     padding-right: 100px;
     height: auto;
-  }
-
+  } */
+/* 
   .text {
     font-size: .75em;
   }
-}
+} */
 
 @media only screen and (max-width: 1300px) {
   #hi {
