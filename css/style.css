@@ -19,8 +19,8 @@ footer {
   color: white;
   text-align: center;
   font-size: 1.1em;
-  background: rgb(111,25,43);
-  background: linear-gradient(180deg, rgba(111,25,43,1) 0%, rgba(94,27,41,1) 75%, rgb(65, 32, 32) 100%);
+  background: rgb(156, 179, 112);
+  background: linear-gradient(0deg, rgba(156, 179, 112,1) 0%, rgb(190, 222, 131) 75%, rgb(198, 237, 127) 100%);
   /* background: rgb(0,149,149);
   background: linear-gradient(196deg, rgba(0,149,149,1) 23%, rgba(0,52,52,1) 100%); */
 }
@@ -75,11 +75,11 @@ li {
 }
 
 .btn {
-  background: rgb(111,25,43);
+  background: rgb(156, 179, 112);
   margin-top: 20px;
 }
 .btn:hover {
-  background: rgb(133, 47, 65);
+  background: rgb(117, 170, 18);
 }
 .carousel-item {
   text-align: center;
@@ -164,9 +164,9 @@ li {
 
 
 .navbar {
-  background: rgb(111,25,43);
-  background: linear-gradient(0deg, rgba(111,25,43,1) 0%, rgba(94,27,41,1) 75%, rgb(65, 32, 32) 100%);
-  box-shadow: 1px 2px 10px #444;
+  background: rgb(156, 179, 112);
+  background: linear-gradient(0deg, rgba(156, 179, 112,1) 0%, rgb(190, 222, 131) 75%, rgb(198, 237, 127) 100%);
+  box-shadow: 1px 2px 10px #515151;
   font-size: 1.5rem;
   position: fixed;
   width: 100%;
